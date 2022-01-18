@@ -5,6 +5,7 @@ resource "aws_cloudwatch_log_group" "example1" {
     Environment = "production"
     Application = "serviceA"
   }
+  retention_in_days = 60
 }
 
 resource "aws_cloudwatch_log_group" "example2" {
