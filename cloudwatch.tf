@@ -7,6 +7,15 @@ resource "aws_cloudwatch_log_group" "example1" {
   }
 }
 
+resource "aws_cloudwatch_log_group" "newresource" {
+  name = "newresource"
+
+  tags = {
+    Environment = "production"
+    Application = "serviceA"
+  }
+}
+
 resource "aws_cloudwatch_log_group" "example2" {
   name = "example2"
 
