@@ -1,50 +1,48 @@
-resource "aws_cloudwatch_log_group" "ex1" {
-  name = "ex1"
-
+resource "aws_cloudwatch_log_group" "exe1" {
+  name = "exe1"
   tags = {
     Environment = "production"
     Application = "serviceA"
   }
 }
 
-resource "aws_cloudwatch_log_group" "ex2" {
-  name = "ex2"
+resource "aws_cloudwatch_log_group" "exe2" {
+  name = "exe2"
 
   kms_key_id = "cwKey"
-  retention_in_days = 60
   tags = {
     Environment = "production"
     Application = "serviceA"
   }
 }
 
-resource "aws_cloudwatch_log_group" "ex3" {
-  name = "ex3"
+resource "aws_cloudwatch_log_group" "exe3" {
+  name = "exe3"
 
   kms_key_id = "cwKey"
-  retention_in_days = 60
+  retention_in_days = 70
   tags = {
     Environment = "production"
     Application = "serviceA"
   }
 }
 
-resource "aws_cloudwatch_log_group" "ex4" {
-  name = "ex4"
+resource "aws_cloudwatch_log_group" "exe4" {
+  name = "exe4"
 
   kms_key_id = "cwKey"
-  retention_in_days = 60
+  retention_in_days = 70
   tags = {
     Environment = "production"
     Application = "serviceA"
   }
 }
 
-resource "aws_cloudwatch_log_group" "ex5" {
-  name = "ex5"
+resource "aws_cloudwatch_log_group" "exe5" {
+  name = "exe5"
 
   kms_key_id = "cwKey"
-  retention_in_days = 60
+  retention_in_days = 70
   tags = {
     Environment = "production"
     Application = "serviceA"
