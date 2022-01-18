@@ -1,5 +1,5 @@
-resource "aws_cloudwatch_log_group" "example1" {
-  name = "example1"
+resource "aws_cloudwatch_log_group" "ex1" {
+  name = "ex1"
 
   tags = {
     Environment = "production"
@@ -7,8 +7,8 @@ resource "aws_cloudwatch_log_group" "example1" {
   }
 }
 
-resource "aws_cloudwatch_log_group" "example2" {
-  name = "example2"
+resource "aws_cloudwatch_log_group" "ex2" {
+  name = "ex2"
 
   kms_key_id = "cwKey"
   retention_in_days = 60
@@ -18,8 +18,8 @@ resource "aws_cloudwatch_log_group" "example2" {
   }
 }
 
-resource "aws_cloudwatch_log_group" "example3" {
-  name = "example3"
+resource "aws_cloudwatch_log_group" "ex3" {
+  name = "ex3"
 
   kms_key_id = "cwKey"
   retention_in_days = 60
@@ -29,8 +29,8 @@ resource "aws_cloudwatch_log_group" "example3" {
   }
 }
 
-resource "aws_cloudwatch_log_group" "example4" {
-  name = "example4"
+resource "aws_cloudwatch_log_group" "ex4" {
+  name = "ex4"
 
   kms_key_id = "cwKey"
   retention_in_days = 60
@@ -40,8 +40,8 @@ resource "aws_cloudwatch_log_group" "example4" {
   }
 }
 
-resource "aws_cloudwatch_log_group" "example5" {
-  name = "example5"
+resource "aws_cloudwatch_log_group" "ex5" {
+  name = "ex5"
 
   kms_key_id = "cwKey"
   retention_in_days = 60
